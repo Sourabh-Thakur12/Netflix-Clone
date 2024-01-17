@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    background-image: url("Resources/images/new background.jpg");
+    height: 58vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+}
+.main .cover{
+    height: inherit;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top:0;
+}
+nav{
+    max-width: 65vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    padding: 12px 0px;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.content{
+    font-family: 'Roboto', sans-serif;
+    height: calc(100% - 86px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 30px;
+}
+.content> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.content> :nth-child(2){
+    margin: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.content> :nth-child(3){
+    font-size: 20px;
+    text-align: center;
+}
+.content .emailRegistration {
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.main input{
+    padding: 16px 208px 13px 4px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border-radius: 4px;
+    border: 1px solid rgba(241, 235, 235, 0.5);
+    font-weight: 400;
+    color: white;
+}
+.red-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 11px 31px;
+    font-size: 21px;
+}
+.red-btn-sm{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+}
+.btn{
+    padding: 3px 8px;
+    background-color: white;
+    font-weight: bold;
+}
+.sepration{
+    height: 8px;
+    background-color: rgb(44, 44, 44);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    /* flex-wrap: wrap; */
+}
+.first .secImg{
+    position: relative;
+}
+.first .secImg :nth-child(1){
+    width: 30vw;
+}
+.first .secImg :nth-child(2){
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 22vw;
+    z-index: -1;
+}
+.first>div :nth-child(1){
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 0 0 10px 0;
+}
+.first>div :nth-child(2){
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.third .secImg :nth-child(2){
+    position: absolute;
+    top: 36px;
+    left: 178px;
+    width: 18vw;
+    z-index: -1;
+}
+.faq h1{
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+}
+.faq{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+.box:hover{
+    background-color:#444343;
+}
+.box{
+    color: white;
+    font-size: 24px;
+    display: flex;
+    background-color: #2d2d2d;
+    padding:24px;
+    max-width: 60vw;
+    margin:11px auto ;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+}
